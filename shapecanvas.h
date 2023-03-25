@@ -41,7 +41,7 @@ private:
     QBrush m_brush;
     bool m_antialiased;
     bool m_transfored;
-    QPixmap pixmap;
+    QPixmap m_pixmap;
 };
 
 #endif // SHAPECANVAS_H

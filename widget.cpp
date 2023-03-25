@@ -56,9 +56,11 @@ Widget::Widget(QWidget *parent)
     ui->brushStyleCombo->addItem(tr("ConicalGradientPattern"), static_cast<int>(Qt::ConicalGradientPattern));
     ui->brushStyleCombo->addItem(tr("TexturePattern"), static_cast<int>(Qt::TexturePattern));
 
-
     m_ptrCanvas = new ShapeCanvas(this);
     ui->canvasLayout->addWidget(m_ptrCanvas);
+
+    penChanged();
+    brushChanged();
 }
 
 Widget::~Widget()
